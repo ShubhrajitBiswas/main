@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, rgb(9, 9, 27) 0%, rgb(39, 8, 39) 50%, rgb(92, 84, 84) 100%);
+            font-family: 'Arial', sans-serif;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #2563eb; /* Tailwind blue */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px;
+            font-size: 1rem;
+        }
+        .button:hover {
+            background-color: #1e40af; /* Darker blue on hover */
+        }
+        .description {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        .description h2,
+        .description h3 {
+            color: #2563eb; /* Tailwind blue for headings */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sorting Algorithms</h1>
+
+    <div class="flex justify-center">
+        <button class="button" onclick="window.location.href='https://shubhrajitbiswas.github.io/bubble/'">Bubble Sort</button>
+        <button class="button" onclick="window.location.href='https://shubhrajitbiswas.github.io/selection/'">Selection Sort</button>
+        <button class="button" onclick="window.location.href='https://shubhrajitbiswas.github.io/quick/'">Quick Sort</button>
+        <button class="button" onclick="window.location.href='https://shubhrajitbiswas.github.io/merge/'">Merge Sort</button>
+    </div>
+
+    <div class="description">
+        <h2>About Sorting Algorithms</h2>
+        <p>
+            Sorting algorithms are used to rearrange elements in a list or array according to a defined order (e.g., ascending or descending). 
+            They are fundamental in computer science for organizing data, which improves efficiency in data retrieval, 
+            searching, and analysis.
+        </p>
+        <h3>Quick Sort vs. Merge Sort</h3>
+        <p>
+            Quick Sort is often chosen over Merge Sort because of its efficiency in average-case scenarios, typically running in O(n log n) time. 
+            It is an in-place sorting algorithm, meaning it requires less memory space, making it more suitable for large datasets. 
+            However, its worst-case time complexity can degrade to O(n²) if not implemented with proper pivot selection strategies.
+        </p>
+        <p>
+            On the other hand, Merge Sort guarantees O(n log n) time complexity regardless of input, making it a stable choice 
+            for large datasets where data stability is crucial. However, it requires additional space for the temporary arrays 
+            used in the merging process, which can be a drawback in memory-constrained environments.
+        </p>
+    </div>
+
+</body>
+</html>
